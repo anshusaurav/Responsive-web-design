@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS added by me */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	line-height: 1.5;
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+.header{
+	background: linear-gradient(180deg, #10161D ,#243241);
+}
+.logo{
+	width: 10%;
+	padding: 12px 0;
+}
+.logo-image{
+	background: transparent;
+}
+.img-responsive{
+	width: 100%;
+}
+.nav-links{
+	width: 30%;
+	align-items: center;
+}
+.nav-links a{
+	text-transform: uppercase;
+	color:white;
+	text-decoration: none;	
+}
+.hero{
+	background: linear-gradient(180deg, #253F4A, #4EA27F);
+}
+.hero h2{
+	color: #DFF5E1;
+	font-size: 80px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+.hero h3{
+	color: #DFF5E1;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: center;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+}
+.padding{
+	padding:60px 0;
+}
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.gallery-flex-item{
+	width: 25%;
+	margin: 1%;
+}
+h4{
+	color: #2C3E50;
+	font-size: 28px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.about-section{
+	background: linear-gradient(180deg, #4EA27F, #253F4A);
+}
+.about{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+.about-flex-item{
+	width: 32%;
+	margin: 1%;
+}
+.about p{
+	font-size: 16px;
+	color: white;
+}
+.white-btn{
+	background: white;
+	font-size: 20px;
+	border: 1px solid black;
+	margin:4% 46%;
+	padding: 0.5% 2%;
+}
+input, textarea{
+	width: 40%;
+	margin: 0.5% 30%;
+	border: none;
+	font-color: #2C3E50;
+	border-bottom: 1px solid #2C3E50;
+} 
+.green-btn{
+	background: #15614F;
+	color: white;
+	font-size: 20px;
+	border:none;
+	margin:4% 46%;
+	padding: 0.5% 2%;
+}
+.location{
+	background: #BDC7D2;
+}
+.map{
+	width:100%;
+}
+iframe{
+	width: 100%;
+}
+table{
+	width: 70%;
+	margin: 0 15%;
+}
+th{
+	background: #1E2639;
+	color: #1E4660;
+	padding: 6px 0;
+}
+td{
+	text-align: center;
+	padding: 6px 0;
+}
+tbody tr:nth-child(even) {
+  background: #323C50;
+}
+tbody tr:nth-child(odd) {
+  background: #2B3346;
+}
+thead th{
+	font-weight: 500;
+	font-size: 20px;
+}
+td:first-child{
+	color: #9B4E63;
+}
+.about-altcampus{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.loc-flex-item{
+	width: 26%;
+	margin: 1%;
+}
+.altC{
+	color: #4FA58E;
+}
+.about-altcampus h2{
+	color: #DFF5E1;
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.about-altcampus p{
+	color: #DFF5E1;
+	font-size: 20px;
+	font-weight: 500;
+} 
+.last-section{
+	background: #2C3E50;
+}
+.sn-links{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: baseline;
+	align-items: stretch;
+
+}
+.sn-flex-item{
+	width: 10%;
+	height: 32px;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+.sn-flex-item a{
+	padding-left: 6px;
+}
+.fab, .fas {
+    color: white;
+
+}
+.footer{
+	background: #19242E;
+	text-align: center;
+	padding: 18px 0;
+}
+.small{
+	color: #C7DCCC;
+	font-size: 16px;
+}
+/*Media Queries */
+@media all and (max-width: 780px)
+{
+	.loc-flex-item{
+		width: 95%;
+	}
+	.about-flex-item{
+		width: 95%;
+	}
+	.gallery-flex-item{
+		width: 95%;
+	}
+
+}
