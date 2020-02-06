@@ -199,8 +199,8 @@ iframe{
 
 /** Table Section **/
 table{
-	width: 70%;
-	margin: 0 15%;
+	width: 80%;
+	margin: 0 10%;
 }
 th{
 	background: #1E2639;
@@ -249,6 +249,7 @@ td:first-child{
 	color: #DFF5E1;
 	font-size: 20px;
 	font-weight: 500;
+	margin-top: 20px;
 } 
 .last-section{
 	background: #2C3E50;
@@ -256,6 +257,7 @@ td:first-child{
 .sn-links{
 	display: flex;
 	flex-flow: row wrap;
+	margin-top: 20px;
 }
 .sn-flex-item{
 	width: 32px;
@@ -298,6 +300,9 @@ td:first-child{
 	}
 	.nav-links{
 		margin: 8px;
+	}
+	.nav-links > div {
+		width: 100%;
 	}
 
 }
