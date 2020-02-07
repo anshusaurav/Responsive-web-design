@@ -99,7 +99,9 @@ body {
 	color:  #4EA27F;
 	text-decoration: none;
 }
-
+#switch {
+	display: none;
+}
 /** Hero Section **/
 .hero{
 	background: linear-gradient(180deg, #253F4A, #4EA27F);
@@ -322,9 +324,10 @@ td:first-child{
 		padding-left: 20px 0;
 	}
 	.toggle{
-		display:block;
+		display:inline-block;
+		z-index: 100;
 	}
-	.toggle:hover ~ .nav-links{
+	.switch:checked ~ .nav-links{
 		display: inline-block;
 	}
 	.logo{
