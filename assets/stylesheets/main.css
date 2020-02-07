@@ -70,6 +70,7 @@ body {
 /**Header Section **/
 .header{
 	background: linear-gradient(180deg, #10161D ,#243241);
+	padding-left: 0 20px;
 }
 .logo{
 	width: 10%;
@@ -92,13 +93,20 @@ body {
 	font-family: 'Merriweather', serif;
 
 }
+.toggle{
+	display: none;
+	font-size: 28px;
+	color:  #4EA27F;
+	text-decoration: none;
+}
+
 /** Hero Section **/
 .hero{
 	background: linear-gradient(180deg, #253F4A, #4EA27F);
 }
 .hero h2{
 	color: #DFF5E1;
-	font-size: 80px;
+	font-size: 64px;
 	text-transform: uppercase;
 	text-align: center;
 
@@ -296,13 +304,30 @@ td:first-child{
 		width: 80%;
 	}
 	.hero h2{
-		font-size: 34px;
+		font-size: 28px;
 	}
 	.nav-links{
-		margin: 8px;
+		display: none;
+		position: absolute;
+		background-color: rgba(16,22,29, 0.9);
+		text-align: center;
+		top: 0;
+    	right: 0;
+    	left: 0;
+    	bottom: 0;
+    	width: 100%;
+    	justify-content: space-between;
 	}
-	.nav-links > div {
-		width: 100%;
+	.nav-links a{
+		padding-left: 20px 0;
 	}
-
+	.toggle{
+		display:block;
+	}
+	.toggle:hover ~ .nav-links{
+		display: inline-block;
+	}
+	.logo{
+		z-index: 100;
+	}
 }
